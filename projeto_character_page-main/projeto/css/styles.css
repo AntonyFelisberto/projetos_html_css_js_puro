@@ -1,0 +1,380 @@
+body, p, h1, h2, input, textarea {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#navbar {
+    background-color: #3A4C6E;
+    color: #fff;
+    padding: 0 15px;
+    height: 60px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav{
+    display: inline-block;
+}
+
+#navbar h2 {
+    margin: 0;
+    line-height: 60px;
+    margin-left: 68px;
+}
+
+#navbar img {
+    height: 34px;
+    position: absolute;
+    top: 10px;
+    padding-right: 5px;
+}
+
+#navbar nav {
+    float: right;
+}
+
+#navbar ul {
+    margin-top: 22px;
+}
+
+#navbar li {
+    margin: 0 10px;
+}
+
+#navbar-list li a {
+    text-decoration: none;
+    color:#fff;
+}
+
+#navbar-list li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+#main-banner {
+    height: 70vh;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    padding-top: 15vh;
+}
+
+#banner-info {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+}
+
+#banner-info img {
+    height: 180px;
+    border-radius: 50%;
+    background-color: #ED1E24;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#banner-info p {
+    background-color: #3A4C6E;
+    font-weight: bold;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+
+#about-section {
+    text-align: center;
+    background-color: #3A4C6E;
+    color: #fff;
+    padding-top: 50px;
+    height: 350px;
+}
+
+#about-section h2 {
+    margin-bottom: 20px;
+}
+
+#about-section p {
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 30px;
+}
+
+#skills-section {
+    margin-top: -100px;
+    background-color: #fff;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+}
+
+#skills-section .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-container {
+    flex: 1 1 1;
+    text-align: center;
+    padding: 60px 25px;
+}
+
+.central {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.skills-container h3 {
+    color: #ED1E24;
+    font-size: 20px;
+}
+
+.skills-container img {
+    height: 60px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 4px solid #ED1E24;
+}
+
+.skills-container .subtitle {
+    font-weight: bold;
+    color: #ED1E24;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.skills-container p {
+    line-height: 25px;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+}
+
+#jobs-section {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#jobs-section h2 {
+    color: #ED1E24;
+    margin-bottom: 30PX;
+}
+
+#jobs-section p {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    inline-size: 700px;
+    overflow-wrap: break-word;
+}
+
+#jobs-section a {
+    font-weight: bold;
+    color: #ED1E24;
+}
+
+.jobs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.job-box {
+    flex: 1 1 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 300px;
+    background-size: cover;
+    border-right: 2px solid #ED1E24;
+    border-bottom: 2px solid #ED1E24;
+}
+
+.proj1 {
+    background-image: url("../img/domain_expansion.jpg");
+}
+
+.proj2 {
+    background-image: url("../img/megumi_vs_sukuna.jpg");
+}
+
+.proj3 {
+    background-image: url("../img/mahoraga.jpg");
+}
+
+.proj4 {
+    background-image: url("../img/megumi-vs-finger-bearer.jpg");
+}
+
+.proj5 {
+    background-image: url("../img/fusion.png");
+}
+
+.proj6 {
+    background-image: url("../img/hiding.webp");
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #3A4C6E;
+    color: #fff;
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+    margin: 30px 0;
+}
+
+footer p {
+    margin-top: 25px;
+}
+
+footer form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer input, footer textarea {
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+
+footer .detail {
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    
+    p,input,textarea {
+        font-size: 1.2rem;
+    }
+
+    #navbar h2 {
+        display: none;
+    }
+
+    #navbar img {
+        top: 9px;
+    }
+
+    #navbar ul {
+        margin-top: 1.1rem;
+    }
+
+    #main-banner {
+        height: 40vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+    }
+
+    #banner-info img {
+        height: 100px;
+    }
+
+    #banner-info h1 {
+        font-size: 20px;
+        color: rgb(38, 0, 255);
+    }
+
+    #banner-info {
+        width: 60%;
+    }
+
+    #banner-info p {
+        margin: 0;
+        width: auto;
+    }
+
+    #about-section {
+        padding: 2rem;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    #skills-section {
+        margin-top: -35px;
+        width: 90%;
+    }
+
+    #skills-section .container {
+        flex-direction: column;
+    }
+
+    .skills-container h3, .skills-container .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .skills-container {
+        padding: 25px;
+    }
+
+    .skills-container {
+        padding: 25px;
+    }
+
+    .skills-container .central {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .skills-container p {
+        line-height: 25px;
+        inline-size: 350px;
+        overflow-wrap: break-word;
+    }
+
+    #jobs-section h2, #jobs-section p{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .jobs-container {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .job-box {
+        margin-bottom: 2rem;
+        flex: 1 1 300px;
+    }
+
+    footer {
+        padding: 50px 15px;
+    }
+
+    footer form {
+        width: 100%;
+    }
+
+    .detail {
+        margin-top: 10px;
+        display: block;
+    }
+}
+
+@media (max-width: 396px) {
+    .skills-container p {
+        line-height: 25px;
+        inline-size: 290px;
+        font-size:5vw;
+        overflow-wrap: break-word;
+    }
+}
