@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto TIP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <main oninput="update()">
+       <h1>Quick Tip</h1>
+       <section>
+            <div class="bill">
+                <label for="yourBill">Bill</label>
+                <input type="number" placeholder="Your Bill" id="yourBill" >
+            </div>
+            <div>
+                <div class="space-between">
+                    <label for="">Select TIP</label>
+                    <span id="tipPercent">0%</span>
+                </div>
+                <input type="range" value="0" id="tipInput" class="range"/>
+            </div>
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <div class="space-between total">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+       </section> 
+       <section>
+            <div>
+                <div class="space-between">
+                    <label for="splitInput">Split</label>
+                    <span id="splitValue">1 person</span>
+                </div>
+                <input type="range" min="1" max="10" value="1" id="splitInput" class="range">
+            </div>
+            <div class="space-between">
+                <span>Bill each</span>
+                <span id="billEach"></span>
+            </div>
+       </section>
+    </main>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6962366875191704"
+     crossorigin="anonymous"></script>
+        <!-- Square Responsive -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6962366875191704"
+             data-ad-slot="9532795880"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Guessing Numbers</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body onload="init()">
+    <main>
+        <div id="welcomeScreen">
+            <h2>Guess the Number <br>1 - 100</h2>
+        </div>
+
+        <div id="gameArea">
+            <section>
+                <h3 id="textOutput">Your Guess:</h3>
+                <input type="number" id="inputBox" max="100" min="1" onchange="compareNumbers()"/>
+            </section>
+            <section class="stats">
+                <div class="info">
+                    <p>Number of Attempts:</p>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="info">
+                    <p>Your Guess:</p>
+                    <span id="guesses"></span>
+                </div>
+            </section>
+            <button id="newGameButton" onclick="newGame()">New Game</button>
+        </div>
+    </main>
+</body>
+</html>

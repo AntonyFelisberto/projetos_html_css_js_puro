@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,p {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #4a87e8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 200px;
+    margin: 25px;
+    border: 1px solid #4a87e8;
+}
+
+.card-image {
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+}
+
+.btn {
+    display: block;
+    background-color: #4a87e8;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #4a87e8;
+    border-color: #4a87e8;
+}
+
+.card-description { 
+    padding: 20px 10px;
+}
+
+#card-1 .card-image{
+    background-image: url("https://th.bing.com/th/id/R.9ff8dcb036310c0edda68b16d427a3ee?rik=YN0G%2f0%2bwnIMOUA&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+}
+
+#card-2 .card-image{
+    background-image: url("https://res.cloudinary.com/skill-safari/image/upload/v1688640017/website/2.0/PYTHON_mipngi.jpg");
+    background-repeat: no-repeat;
+}
+
+#card-3 .card-image{
+    background-image: url("https://th.bing.com/th/id/OIP.tQJEnqJpJ4iQf_bzQkWCQgAAAA?w=300&h=300&rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+}
+
+#card-4 .card-image{
+    background-image: url("https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/042018/untitled-2_161.png?rGrAUCc_DG.Vb_UgZKfArV_3mfKfQrN.&itok=wY0wCxil");
+    background-repeat: no-repeat;
+}
