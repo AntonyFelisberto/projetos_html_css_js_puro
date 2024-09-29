@@ -1,0 +1,172 @@
+da pra você misturar as tags tambem
+
+<h1></h1> serve pra titulos(vai até o h6)
+----------------------------------------------------------------------
+<p></p>   paragrafos
+-----------------------------------------------------------------------
+<ol><li></li><li></li><li>...</ol>  lista ordenada
+-------------------------------------------------------------------------
+<input type="number"></input> serve pra inserir valores e no type você define o tipo do valor
+-----------------------------------------------------------------------
+<strong></strong>negrito
+------------------------------------------------------------------------
+<em></em> italico
+--------------------------------------------------------------------------
+<!-- comentário em html-->
+-------------------------------------------------------------------------
+<algumatag dir="rtl"></fechatag> serve pra mover a tag pro valor que você colocar nas ""
+-------------------------------------------------------------------------
+<a href="c.html" target="_blank" rel="next" title="titulo"></a>  serve pra colocar links você pode colar ou colocar nome.tipo no target serve pra dizer onde vai abrir a pagina o rel serve pra dizer pra qual parte seu conteudo está indo já o title seria o titulo do link(da pra usar links em imagens,letras,titulos etc)
+--------------------------------------------------------------------------
+<algumatag lang="pt-br"></fechatag> serve pra mudar a linguagem no ""
+----------------------------------------------------------------------------
+<article></article> cria artigos
+-----------------------------------------------------------------------------
+<section></section> cria seções
+-----------------------------------------------------------------------------
+<div></div> serve não só como divisão mas também como um local para o id e class
+-----------------------------------------------------------------------------
+<pre></pre> texto pré formatado(ele respeita tudo do jeito que você colocar até os espaços)
+-----------------------------------------------------------------------------
+<b></b>negrito
+-------------------------------------------------------------------------------------------------
+<img src="diretorio" width="900"  height="90" alt="texto representativo que você vai dar pra imagem" align="center"> no src você coloca o diretório ou nome.tipo width é a largura height o tamanho e alt seria um titulo da imagem o align seria onde você quer alinha a imagem
+-----------------------------------------------------------------------------
+&letra- ele mostra os tipos de caracteres especiais que da pra usar(da pra pesquisar na wikipedia)
+-----------------------------------------------------------------------------
+letradotexto&nobspletradotexto&... ele faz com que as palavras que esta com isso sempre fiquem na mesma linha
+----------------------------------------------------------------------------
+<img src="diretorio" width="900"  height="90" alt="texto" align="center" data-type="valor"> no src você coloca o diretório ou nome.tipo width é a largura height o tamanho e alt seria um titulo da imagem o align seria onde você quer alinha a imagem
+
+data-type="showcase"->usada quando temos imagem de largura completa
+data-type="reason"->usada quando temos imagem de largura pequena
+data-type="feature"->usada quando temos imagem em destaque
+data-type="story"->usada quando temos imagem em destaque
+----------------------------------------------------------------------------
+<a href="nome.tipo" title="titulo" download="nomedodownload.tipo"></a>serve pra fazer o download você coloca o nome.tipo ou seu diretório no title você coloca o titulo do download e no download você coloca o novo nome e o tipo
+-----------------------------------------------------------------------------
+<algumatag id="nomequevocêda"></algumatag> serve pra criar um id nas tags
+<algumatag class="nomequevocêda"></algumatag> serve pra criar um class nas tags
+<a href="#nomequevocêdeunoid"></a> serve como link pro lugar onde está o id(sempre colocar # e o nome do id)
+<a href="nome.tipo#nomequevocêdeunoid"></a> serve pra ir pra outra pagina e no mesmo lugar do id que você colocol
+<a href=".nomequevocêdeunoclass"></a> serve como link pro lugar onde está o id(sempre colocar . e o nome do class)
+<a href="nome.tipo.nomequevocêdeunoclass"></a> serve pra ir pra outra pagina e no mesmo lugar do class que você colocol
+-----------------------------------------------------------------------------
+<ul> cria uma lista não ordenada
+<li></li>cria os itens dessa lista
+    <li></li>pra caso você queira um subitem dentro do outro você faz assim
+</ul>
+
+<ul style="list-style-type:square"> você deixar o desenho dos tópicos no formato que você quiser
+-----------------------------------------------------------------------------
+<ol> cria uma lista ordenada
+<li></li>cria os itens dessa lista
+    <li></li>pra caso você queira um subitem dentro do outro você faz assim
+</ol>
+
+<ol reversed start="10" type="I"> a lista fica em ordem decrescente e start você escolhe o numero que ela começa e o type é o tipo de lista
+
+types
+1
+A
+a
+i
+I
+-----------------------------------------------------------------------------
+<dl>descrição da lista(a criação)
+<dt></dt>termo de descrição(titulo do item)
+  <dd></dd>definição do termo(o paragrafo)
+<dt></dt>...
+</dl>
+
+<dl>descrição da lista(a criação)
+<dt></dt>termo de descrição(titulo do item)
+  <dd></dd>definição do termo(o paragrafo)
+  <dd></dd>
+  <dd></dd>
+  <dd></dd>
+<dt></dt>
+   <dd></dd>...
+</dl>
+
+<dl>descrição da lista(a criação)
+<dt></dt>termo de descrição(titulo do item)
+  <dd></dd>definição do termo(o paragrafo)
+<dt></dt>
+<dt></dt>
+<dt></dt>
+<dt></dt>
+   <dd></dd>...
+</dl>
+------------------------------------------------------------------------------
+<table>criação da tabela
+ <tr>criação da linha
+  <th></th>titulo da linha
+  <td></td>nome da linha
+  <td></td>
+  <td></td>
+  <td></td>...
+ </tr>
+ <tr>...
+</table>
+
+<table>
+ <tr>
+  <th>nome</td>
+  <th>email</td>
+  <th>cpf</td>
+  <th>linhas</td>...
+ </tr>
+ <tr>
+  <td>madara</td>
+  <td>flavinha@</td>
+  <td>0999</td>
+  <td>11</td>...
+ </tr>
+</table>
+
+<table>criação da tabela
+ <caption></caption>titulo da tabela
+ <sumary></sumary>descrição da tabela
+ <tr>criação da linha
+  <th></th>titulo da linha
+  <td></td>nome da linha
+  <td></td>
+  <td></td>
+  <td></td>...
+ </tr>
+ <tr>...
+</table>
+
+<table border cellspacing="10px" cellspadding="5px" width="50%"> border cria tabela com bordas cellspacing aumenta o espaçamento e o cellpadding o espaçamento das letras width serve pra atualizar a largura
+<td width="50%"><th width="50%"> se você usar o width em uma das tags da tabela ela vai ocupar o tamanho da proporção da tabela
+<td colspan="3"><th colspan="5"> caso precise de mais colunas pra um item se usa colspan="numero de colunas que quer"
+
+<table>
+ 1<tr>
+  <td rowspan="3"></td>aqui você cria o numero de linhas que o item vai pegar usando rowspan="numero" e você vai contando elas a partir do tr
+  <td></td>todos os dados que estiverem nessa linha e nas próximas estarão dento do item com  rowspan
+  <td></td>
+  <td></td>
+ </tr>
+ 2<tr>
+  </tr>
+ 3<tr>acabou o rowspan aqui
+ </tr>
+</table>
+
+da pra colocar o que você quiser dentro da tabela texto,imagem,video etc
+
+------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+sites html 
+https://www.w3schools.com/html/default.asp
+w3c
+whatwg
+webplatform.org
+developer.mozilla.org

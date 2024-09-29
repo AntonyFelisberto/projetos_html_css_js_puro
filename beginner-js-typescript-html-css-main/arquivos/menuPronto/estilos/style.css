@@ -1,0 +1,38 @@
+:root{/*raiz do projeto para declarar variaveis*/
+   --vermelho:#E50914;
+   /*pra usar variaveis coloca --nomeVariave:valorQueRecebe*/
+   --preta:#141414;
+}
+
+*{/*o asterisco se refere a todos os elementos do html*/
+    margin: 0;/*espaço entre um item e outro*/
+    padding: 0;/*espaço de um determinado item*/
+    box-sizing: border-box;/*os elementos não podem ultrapassar a semantica ou seja sua div,nav,header entre outros,o box sizing serve pra fazer esses elementos não ultrapassarem essa caixa*/
+}
+
+
+body{
+              /*pra usar as variaveis declaradas na raiz você coloca var(--nomeVariavel)*/
+    background:var(--preta);
+    font-family: 'Times New Roman', Times, serif;       
+}
+header .container{/*diz que esse estilo serve pra classe container que esta dentro do header e só as classes que estão dentro do header*/
+    display: flex;/*joga todas todos os itens pra linha*/
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{/*diz que esse estilo serve pra classe logo que esta dentro do header e só as classes que estão dentro do header*/
+    color:var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{/*diz que esse estilo serve pra tag (a) que esta dentro da tag (nav) que esta dentro da tag header*/
+    text-decoration: none;/*tipo de decoração no texto*/
+    color: #AAA;
+    margin-right: 10px;/*da um espaço na margin de cada uma das tags tipo a*/
+}
+header nav a:hover{/*diz que esse estilo serve pra tag (a) que esta dentro da tag (nav) que esta dentro da tag header*/
+             /* :hover->quando a pessoa passar o mouse em cima de certa tag   */
+    color: #fff;
+}

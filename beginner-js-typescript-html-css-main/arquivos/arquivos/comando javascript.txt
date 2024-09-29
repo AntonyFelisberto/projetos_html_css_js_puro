@@ -1,0 +1,625 @@
+javascript é case sensitive ou seja se uma palavra for escrita em maiuscula você tem que escreve la novamente assim
+
+pra ver mais sobre javascript
+
+mozilla developer network(eventos,codigos,etc)
+jslint(diz tudo que está de errado no javascript)
+minifier.org(minimiza o tamanho do seu javascript dai você cria um novo arquivo chamado nome.mini.js)
+
+--------------------------------------------------
+fazer comentarios /*aaa*/
+-------------------------------------------------
+<nometag funçãodojavascript=""></nometag>
+-----------------------------------------------
+no head para ser executado antes da pagina ser renderizada
+depois do body para ser executado depois da pagina ser renderizada
+<script>
+
+</script>
+-------------------------------------------------
+para debugar o codigo
+você clica com o botão direito,vai em inspecionar,clica em source
+depois clica no numero da linha,ai é só ir clicando nas flechas pra ir depurando
+--------------------------------------------------------------------------------
+só colocar assim no head para ser executado antes da pagina ser renderizada
+depois do body para ser executado depois da pagina ser renderizada
+
+<script src="nomedoscript.js"></script>->pode causar bloqueio na pagina
+<script src="nomedoscript.js" async></script>->o arquivo vai ser baixado junto com o html
+<script src="nomedoscript.js" defer></script>->o arquivo só vai ser executado depois de todo o resto ser executado
+-------------------------------------------------
+onclick=valor;quando clicar vai fazer algo
+onmouse=valor;quando passar o mause por cima
+
+windows.unload=function(){
+  alert('oi');
+  window.alert('oi');
+}
+
+document.getElementById('nomeid').innerHTML="valor";vai fazer escrever algo no id
+document.getElementById('nomeid').src="valor";troca imagem do id
+document.getElementById('nomeid').style.fontsyze="valor";troca a fonte do id
+document.getElementById('nomeid').value;pega valor digitado no id
+document.getElementById('nomeid').style.backgroundColor="cor em ingles";muda a cor de fundo
+-----------------------------------------------------------------------------
+existem muitos outros eventos tem que pesquisar
+
+addEventListener("evento")->adiciona um evento a partir da execução que você ordenar
+testArea.addEventListener("keypress",start,false);
+testArea.addEventListener("keyup",spellCheck,false);
+resetButton.addEventListener("click",reset,false);
+------------------------------------------------------------------------------
+<button onclick="nomedasuafunção()">clique aqui</button>
+
+<script>
+function nomedasuafunção(){
+  codigo que vai executar
+  
+}
+</script>
+-------------------------------------------------------------------------------
+<button onclick="nomedasuafunção()">clique aqui</button>
+
+<script>
+function nomedasuafunção(){
+  windows.unload=function(){
+  alert('oi');
+} 
+}
+</script>
+-------------------------------------------------------------------------------
+<script>
+function nomedasuafunção(){
+   var nomevar=funçãoquevaidarpraelaumvalor
+   var nomev =11
+   var std=Number(nomevar);
+   document.getElementById('nomeid').innerHTML="você escreve o que quiser"+std
+
+} 
+
+</script>
+--------------------------------------------------------------------------------
+<script>
+function nomedasuafunção(){
+   var nomevar=funçãoquevaidarpraelaumvalor
+   var nomev =11
+   if(nomev condição valor){
+
+   }else if(nomev <=0){
+
+   }else{
+
+   }
+} 
+
+</script>
+------------------------------------------------------------------------------------------------
+<script>
+function nomedasuafunção(){
+   var nomev =Math.random() conta que você quer;Math.random()*1+100 ou Math.random()+30*23...
+   var nene;
+   nene.style.left=nomev+"px";
+   
+} 
+
+</script>
+------------------------------------------------------------------------------------------------
+comandos
+
+alert("frase")
+
+window.alert("frase")
+
+var nomevar
+
+new Date()->pega a data
+
+var nome=new Date()
+
+window.document;
+
+window.innerWidth;->mostra o tamanho da tela
+window.open();->abre nova janela
+
+alert("frase"+nomevar+"otra frase")->pra juntar strings e variaveis
+window.alert("frase"+nomevar+"otra frase")->pra juntar strings e variaveis
+
+console.log("escreve algo no log");
+console.log(nomefunção(valores));
+console.log("escreve algo no log e aparecer a variavel ",nomevar);
+console.log("escreve algo no log e aparecer a variavel "+nomevar+"str"+var...);
+console.log(typeof(nomevar));
+console.log(nomevar);
+console.log(nomevar operadorlógico nomevar);
+console.log("before:",nomevar);
+console.log("after:",nomevar);
+nomevar.reverse();->reverte a ordem do array/vetor
+console.log("Arraylength:",nomevar.length);
+
+classList.evento("valor");executa uma função que você quer
+nomevar=classList.remove("hide");
+nomevar=classList.add("hide");
+nomevar=classList.toggle("hide");
+nomevar=classList.toggle("hide");
+
+reveal;->revela o item
+nomevar.onclick=reveal;
+
+nomevar.Attributes->mostra os atributos do item
+nomevar.hasAttribute("nome do atributo");->verifica se aquele item tem o atributo que você quer
+nomevar.getAttribute("nome do atributo");->ele pega o valor do atributo que você quer
+nomevar.setAttribute("nome do atributo","valor que recebe");->cria um novo atributo com o valor
+
+document.querySelector("qualquer coisa");#id,.class,tag só pela letra ex:a ou p
+document.querySelectorAll("qualquer coisa");
+document.querySelector("qualquer coisa").oquevaifazer;
+document.querySelector("qualquer coisa").oquevaifazer[posição];
+document.querySelector("qualquer coisa").oquevaifazer="valor";
+document.querySelectorAll("qualquer coisa").oquevaifazer="valor";
+
+document.querySelector("qualquer coisa").classList[11]
+document.querySelector("qualquer coisa").classList
+document.querySelector("qualquer coisa").classList.(add('nome_da_nova_classe')remove('nome_da_classe')
+document.querySelector("qualquer coisa").classList.toggle('nome_da_classe')->o toggle desativa e ativa uma classe então se ela estiver desativada ele ativa se estiver ativa ele desativa
+document.querySelector("qualquer coisa").classList.contains('nome_da_classe')->verifica se contain essa classe
+
+
+
+nomevar=Math.floor(contas);
+
+clearInterval(nomevariaveldeintervalo);->limpa o intervalo
+
+nomevar=nomevar+".jpg";
+
+nomevar.style.tipodoestilo="valor";
+  
+nomevar.addEventListener("evento",função,trueoufalse);->se fosse na questão de documentos é true na questão de funções é false
+nomevar.addEventListener("click",nomefunção,false);
+
+document.getElementsByClassName();pega um elemento pela classe
+
+document.getElementsByTagName();->pega um elemento pela tag
+
+nomevar ="0" conta nomevar->converte a string em um numero real e faz a conta que você quiser
+
+nomevar.substring(posição,oquevaicopiar)->permite que você copie o texto de uma variavel até onde quiser
+var l=nomevar.substring(0,variavel.lenght);textEntered é o texto que o usuario digitou
+
+nomevar.preventDefault()->mantém as configurações constantes até o fim
+
+document.createElement("nome");cria um elemento
+document.createTextNode(nomevar);cria um no para carregar o conteudo do elemento
+document.appendChild();coloca um nó dentro do outro
+nomevar.appendChild(nomeoutravar);
+nomevar.append(nomeoutravar);
+
+var data=new Date();
+data.getHours();
+data.getMinutes();
+data.getSeconds();
+
+nomevar[nomevar].hasAttribute("item")->verifica se a varivel tem o item
+nomevar[nomevar].hasAttribute("target");
+nomevar[nomevar].setAttribute("target","blank");
+
+
+variavel=variavel.slice(de onde vai pegar ,quantos caracteres vai remover);->verifica os caracteres
+variavel=variavel.slice(0,-8);
+
+
+document.body.innerHTML
+document.body.innerHTML->você pode usar qualquer tag e se quiser concatenar com strings e variaveis
+document.body.innerHTML=<tag>"o que você quer escrever"+nomevar</tag>
+
+document.querySelector("#nomeid");->ele procura o item marcado
+document.querySelector(".nomeclass");
+document.querySelector();
+
+.hasAttribute("estilo")verifica se tem aquele estilo
+.getAttribute("estilo");->pega os estilos inline
+.setAttribute("estilo","valor")->adiciona a propriedade css no item que você quer
+.removeAttribute("estilo")->remove o estilo
+document.querySelector(".nomeclass")..setAttribute("style","color:black........")
+
+document.querySelectorAll("tag ");->vai procurar todos tags que tiverem o que você colocar
+document.querySelectorAll("a[href^=http");->[seleciona os itens,itemquequerpesquisar^=ou itemquequerpesquisar
+nomevar=document.querySelectorAll("a[href^=http");
+nomevar[var].hasAttribute("item")->verifica se a varivel tem o item
+nomevar[var].hasAttribute("target");
+nomevar[nomevar].setAttribute("item","valorquerecebe");->seleciona o item e o valor que vai receber
+nomevar[nomevar].setAttribute("target","blank");
+
+nomevar.length
+
+
+nomevar.getAttribute("atributo");->pega o atributo que comneça com o que você colocar
+nomevar[i].getAttribute("src");
+
+nomevar.getDate
+nomevar.getMonth->pega o mes
+nomevar.getYear->pega o ano
+
+nomevar.style.transform="rotate("+var+"deg)";->vai rotacionar o numero de graus(deg) definidos
+nomevar.style.transform="rotate("+12+"deg)";
+
+nomevar.value.lenght->pega o valor do tamanho da variavel
+
+let nomevar=valor;selecionar a variavel
+
+setInterval(nomefunção,tempodeintervaloemsegundos)->ele chama uma função ou executa um trecho de código repetidamente com um atraso de tempo fixo
+var nomevar=setInterval(tempo,1000);
+var a,b,c...;
+
+var a=5;
+
+var cda=a+b;
+
+var r="ola";
+
+var m=false;
+var m=true;
+
+const nomevar;->uma vez definida não pode ser alterada
+let nomevar;->limita o resultado da variavel
+
+
+quando uma variavel é declarada fora da função ela é;->global
+quando uma variavel é declarada dentro da função ela é;->local
+----------------------------------------------------------------------------------
+css inline com javascript
+
+document.querySelector("elemento que você quer").style.elementodecss="valor";
+document.querySelector('elemento que você quer').style.elementodecss="valor";
+document.querySelector('a').style.color="blue";
+
+quando o elemento tiver - você tem que fazer junto e a primeira letra depois do traço maiuscula
+
+document.querySelector('a').style.backgroundColor="blue";
+
+se quiser selecionar varios elementos pra alterar
+
+document.querySelector('a').style.cssText="color:blue,background-color:gray,........";
+----------------------------------------------------------------------------------
+fazer imagens responsivas
+
+const Nomevar={
+     showcase:"100vw",->largura maxima
+     reason:"(max-width:numeropx) 100vw,numeropx",o max é a altura e os dois fora é que caso não seja 100vw vai ser o numeropx
+     feature:"(max-width:numeropx) 100vw,numeropx",
+     story:"(max-width:numeropx) 100vw,numeropx"
+}
+
+const Size={
+     showcase:"100vw",
+     reason:"(max-width:400px) 100vw,350px",
+     feature:"(max-width:800px) 100vw,400px",
+     story:"(max-width:900px) 100vw,450px"
+}
+
+let novavar=Nomevar[type];
+variaveldeimagem.setAttributes("sizes",novavar);
+----------------------------------------------------------------------------------
+percorrer imagens
+const imagens=document.querySelectorAll("img")
+
+for(let i=0;i<imagens.lenght;i=i+1){
+   let variavel=imagens[i].getAttribute("src");
+   variavel=variavel.slice(0,-8);
+}
+----------------------------------------------------------------------------------
+criar objeto
+
+var nomevar=new object();
+nomevar.caracteristicasquevocêvaidar="o que recebe";
+
+var antony=new object();
+antony.nome="antony";
+antony.cidade="cambé";
+antony.idade=19;
+antony.namora=false;
+
+outra forma de fazer
+
+var antony={
+	nome:"antony",
+	cidade:"cambé",
+	idade:19,
+	namora:false
+}
+
+criando metodos no objeto
+
+var antony={
+	nome:"antony",
+	cidade:"cambé",
+	idade:19,
+	namora:false,
+        nome:function(){
+             codigo
+             return var;
+             return 1;
+             //você retorna só se quiser
+
+        }
+}
+
+var antony={
+	nome:"antony",
+	cidade:"cambé",
+	idade:19,
+	namora:false,
+        nome function(){
+             return antony.idade+=1;
+
+        }
+}
+
+criar o objeto pra depois só referenciar seus atributos
+
+function Primeraletramaiuscula(atributos...){
+   this.atributo=atributo;
+   this.nome function(){
+             return antony.idade+=1;
+
+  }
+}
+
+function Antony(nome,idade,sexo...){
+   this.nome=nome;
+   this.idade...
+   this.nome function(){
+             return antony.idade+=1;
+
+  }
+}
+
+var nomevar=Antony("antony","m"...);
+var nomevar=Objeto("valores",1,2,true...);
+
+var nomevar={
+   new Nomevar("valores",1,2,true...);
+   new Nomevar("lores",1,2,true...);
+   new Nomevar("va",1,2,false...);
+}
+
+var Antony={
+   new Antony("valores",1,2,true...);
+   new Antony("lores",1,2,true...);
+   new Antony("va",1,2,false...);
+}
+
+console.log(Antony[posição].atributo)
+console.log(Antony.atributo)
+----------------------------------------------------------------------------------
+loops de repetição
+
+for(var nomevar=numero;nomevar condição valorouvariavel;incrementooudecremento){
+}
+for(var nomevar=1;nomevar < var;nomevar=nomevar+1){
+}
+for(var nomevar=10;nomevar >= valorouvariavel;nomevar=nomevar-1){
+}
+while(nomevar >= valorouvariavel){
+}
+while(nomevar <= valorouvariavel || nomevar >= valorouvariavel && nomevar >= valorouvariavel....){
+}
+do{
+}while(nomevar >= valorouvariavel);
+do{
+}while(nomevar <= valorouvariavel || nomevar >= valorouvariavel && nomevar >= valorouvariavel....);
+>=
+<=
+>
+<
+break-termina o loop atual e passa para o próximo passo no script(quebra o loop de vez)
+continue-termina a iteração e volta para executar a próxima iteração
+
+for(var nomevar=10;nomevar >= valorouvariavel;nomevar=nomevar-1){
+   nomevariavel[nomevar].hasAttribute("target")
+   nomevariavel[nomevar].setAttribute("target","blank");
+}
+----------------------------------------------------------------------------------
+tipos de dados
+
+Number
+String
+boolean
+null
+undefied
+symbol
+
+operadores
+=== exatamente igual
+== igual
+= recebe
++
+++
++= variavel recebe ela mesma mais numero
+-
+-- variavel recebe ela mesma menos numero
+/
+/= variavel recebe ela mesma dividida pelo numero
+%
+*
+*= variavel recebe ela mesma vezes numero
+()->executa a conta que esta dentro dele primeiro
+
+cuidado:
+quando você faz conta com um numero e com um caractere o computador só junta os dois
+como se fossem caracteres
+
+ex:
+var a=125;
+b="1";
+var resultado=a+b;
+
+resultado foi 1251
+
+Uma variável que contém uma string com apenas um número é tratada como 
+uma string ou um número, dependendo do contexto em que é usada
+
+
+----------------------------------------------------------------------------------
+criar vetores(os vetores sempre começam no 0)
+
+var nome;
+
+nome=["qualquer","coisa","que","você","quise"..........];
+
+nome=[1,2,3,4,5,6,7,..........];
+
+nome[numero da posição]="caracter";
+
+nome[1]="antony";
+
+nome[1]=11;
+
+nome[1]=true;
+
+console.log(nome);
+
+var logo=nome[5];
+console.log(logo);
+
+var variascoisas["strings",1,2,78,"strings","s",7,"i",false,.....];
+
+var variascoisas=new array["strings",1,2,78,"strings","s",7,"i",false,.....];
+
+        metodos(da pra usar numero tambem)
+nomevar.reverse();->reverte a ordem do array/vetor
+
+nomevar.shift("string","string".......);->remove o primeiro elemento do array/vetor
+
+nomevar.unshift();->adiciona um ou mais elementos no array
+
+nomevar.pop();->remove o ultimo elemento do array/vetor
+
+nomevar.push("string","string",...........);->adiciona um ou mais elementos no final
+
+nomevar.splice(pos,n);->remove o numero de caracteres ou numeros na posição definida
+nomevar.splice(3,6);
+
+console.log("before:",variascoisas);
+
+console.log("after:",variascoisas);
+
+var novavar=nomevar.slice();->copia o que esta em uma variavel e passa pra outra
+
+var novavar=nomevar.indexOf(o que deseja procurar,endereço);
+var novavar=nomevar.indexOf(8,2);
+var novavar=nomevar.indexOf("antony",2);
+
+var novavar=nomevar.join(separator);->vai passar a string com separador que você quer(-,/=+<>?.....)
+var novavar=nomevar.join(.);
+
+console.log("Arraylength:",variascoisas.length);
+----------------------------------------------------------------------------------
+condições(da pra usar fora da function)
+==
+>=
+<=
+>
+<
+!=
+===->o valor na direita é igual ao valor na esquerda
+!==->o valor na direita não é identico ao valor na esquerda
+==true
+==false
+
+and
+or
+
+  if(nomev condição valor || nomev condição valor){
+
+   }else if(nomev <=0 && nomev condição valor){
+
+   }else if((nomev <=0 && nomev condição valor)||(nomev <=0 && nomev condição valor)){
+
+   }else{
+
+   }
+----------------------------------------------------------------------------------
+funções(da pra colocar uma dentroi da outra)
+
+funções nomeadas 
+function nome(nomevarquerecebe,nomevarquerecebe,nomevarquerecebe........){
+   codigo
+   return var;
+   return 1;
+   //você retorna só se quiser
+
+}
+function nome(){
+   codigo
+   return var;
+   return 1;
+   //você retorna só se quiser
+
+}
+
+funções anonimas
+var nomevar= function(){
+   codigo
+   return var;
+   return 1;
+   //você retorna só se quiser
+
+}
+var nomevar= function(nomevarquerecebe,nomevarquerecebe,nomevarquerecebe........){
+   codigo
+   return var;
+   return 1;
+   //você retorna só se quiser
+
+}
+
+funções imediatamente invocadas (quando o navegador a encontre ele já executa)
+(function(){
+   codigo
+   return var;
+   return 1;
+   //você retorna só se quiser
+}())
+(function(nomevarquerecebe,nomevarquerecebe,nomevarquerecebe........){
+   codigo
+   return var;
+   return 1;
+   //você retorna só se quiser
+}())
+
+chamar a função(vale pra todos os tipos)
+
+nome();
+nome(valores);
+nome(1,"aasa",varnome);
+----------------------------------------------------------------------------------
+eventos
+
+navegador(carregar,redefinir janela,etc)
+dom(clique,foto,envio,etc)
+----------------------------------------------------------------------------------
+no javascript você consegue fazer ifs com qualquer coisa é só você saber
+os tipos de resultado dela
+
+ex:
+ if(background-color=="blue"){
+ }else if(border-color=="gray"){
+ }
+----------------------------------------------------------------------------------
+frameworks de javascript
+angular
+react
+vue.js
+
+editores
+sublime text
+
+ide
+netbeans
+eclipse
+aptana studio
+
+ajudas para javascript
+troubleshooting
+teste de velocidade de digitação
+

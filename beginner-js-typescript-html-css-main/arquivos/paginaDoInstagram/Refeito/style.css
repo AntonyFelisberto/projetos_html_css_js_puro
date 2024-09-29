@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil{
+    display: flex;/*o elemento vira um flex container//ou seja ele sempre vai alinha os elementos em linha*/
+    align-items: center;/*alinha todos os itens*/
+    justify-content: start;/* justify-content define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um contêiner flexível e do eixo embutido de um contêiner de grade */
+    width: 60%;
+    height: 100vh;
+}
+.nova{
+    display: flex;/*o elemento vira um flex container//ou seja ele sempre vai alinha os elementos em linha*/
+    align-items: center;/*alinha todos os itens*/
+    justify-content: center;/**/ 
+    width: 50%;
+}
+.nova img{
+    height: 50rem;
+}
+.grupo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;/*faz com que todos os itens fiquem ordenados no display*/
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+.grupo:nth-child(1){/*nth-child pega todos os elemento filhos daquele elemento (1)->significa que pega o primeiro elemento*/
+    min-width: 19rem;
+}
+.logo{
+    font-size: 50px;
+}
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;/*pra imagem não sair pra fora da sua div//o overflow vai esconder*/
+}
+.foto-perfil img{
+    height: 10rem;
+}
+.login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.texto-conta{
+    color: rgb(160, 160, 160);
+}
+.links{
+    color: #0095f6;
+}
+.topo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1){
+    background-image: url();
+}
+.app-download:nth-child(2){
+    background-image: url(); 
+}

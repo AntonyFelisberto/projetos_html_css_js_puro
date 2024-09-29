@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myShoppingApp">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>AngularJS - Shopping List</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/angular.js"></script>
+    <script src="js/shopping.angular.js"></script>
+  </head>
+  <body ng-controller="MainController">
+    
+    <div id="container">
+      <h2>My Shopping List</h2>
+      <mylist><!--PARA DIRETIVAR PERSONALIZADAS DO ANGULAR TUDO TEM QUE SER MINUSCULO-->
+          <p> OLA DIRETIVA</p>
+      </mylist>
+      
+      <ol>
+          <li ng-repeat="item in items">
+              <input type="checkbox" ng-model="item.checked">
+              <span class="checked-{{item.checked}}">{{item.name}}</span>
+              <button ng-click="removeItem($index)">Delete</button>
+          </li>
+      </ol>
+      
+      <form ng-submit="addItemToList()">
+        <input type="text" size="30" placeholder="Type a new item here" ng-model="newItem">
+        <input type="submit" value="Add">
+      </form>
+    
+      <!-- CONTROLLER SECUNDARIO
+      <ng-controller ng-controller="ngController">
+        <p>Hi {{message}} - {{items[0].name}}</p>
+      </ng-controller>
+      -->
+    </div>
+  </body>
+</html>

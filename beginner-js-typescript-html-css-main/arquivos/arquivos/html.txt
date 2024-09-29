@@ -1,0 +1,45 @@
+		semantica (você pode misturar qualquer tag uma com a outra)
+
+<section>sessão genérica</section>					vem no body quando você passa do titulo,e vai começar a incorporar a pagina
+<header>cabeçario</header>						usado quando você vai usar um titulo
+<article>conteudo importante</article>					se usa quando você já colocou o section,você coloca o conteudo dentro de um article
+<aside>conteudo relacionado a parte principal da pagina</aside>		
+<footer>rodapé</footer>							
+<h1></h1>....<h6></h6> titulos						titulos da pagina,ficam dentro do header
+<div>divisões</div>							quando você quer fazer divisões no conteudo da pagina
+
+<tag dir="rtl">o dir diz em qual direção vai ser colocado</tag>
+
+		letras
+<b></b> negrito <strong></strong> 
+<em>emfase</em>
+<p>paragrafos</p>
+<!--comentario-->
+
+                 link
+
+<a href="local.tipo ou link"></a>
+<a href="index.html"></a>
+<a href="linkedin.com"></a>
+
+<a href="" target="como o link vai ser aberto"></a>
+<a href="" target="_blank">vai abrir em outra guia</a> 
+
+                 img
+<img src="caminho da imagem/nome.tipo">
+<img src="kratos.jpg">
+
+<img src="" alt="mostra a descrição da foto quando não é carregada">
+
+                listas
+
+<ol>		ordened list
+  <li></li>
+  <li>...	são a list de itens que você coloca em toda a sua lista
+</ol>
+
+
+<ul>    	lista não ordenada
+  <li></li>
+  <li>...	são a list de itens que você coloca em toda a sua lista, você pode inserir qualque coisa dentro das listas desde links tabela e etc
+</ul>

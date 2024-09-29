@@ -1,0 +1,14 @@
+.dino{
+    width: 60px;/*largura*/
+    height: 60px;/*altura*/
+    background: green;
+    position: absolute; /*o elemento vai ficar naquela posição independente do que estiver em volta*/
+    bottom: 0;/*bottom quer dizer pra baixo ou seja vai ficar o mais baixo possivel*/
+}
+.cactus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image:url('cactus.png');/*diz que a imagem de fundo dele vai ser um cactus*/
+}

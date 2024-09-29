@@ -1,0 +1,150 @@
+		BOX MODEL
+margin-espaçamentos entre elemntos                              margin(é um elemento de css)	auto se adequa a tela
+border-circulam o pading e o content				border(é um elemento de css)
+padding-é o espaço entre a borda e o conteudo			padding(é um elemento de css)
+content-é o conteudo da sua pagina
+
+
+-----------------------------------------------------------------------------------------------
+				RESIZE
+
+resize: none;
+
+--------------------------------------------------------------------------------------------------
+CONCEITO GERAL(TODOS OS ITENS SEGUEM ESSE PADRÃO)
+
+TIPO:10 px   11 px;
+         cima	 esquerda
+         baixo   direita
+                     
+TIPO: 10px   11px      10px  11px; 
+         cima    direita  baxo  esquerda
+
+TIPO-top
+TIPO-right
+TIPO-botton
+TIPO-left
+
+------------------------------------------------------------------------------------------------
+color: tipo;   		muda a cor da letra
+
+font-family:tipo,tipo caso a primeira não va,tipo caso a segunda não va
+
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+font-size: tamanho;
+
+fonty-style:italian; 	muda o estilo que o texto é exibido
+
+font-weight: tipo;
+
+text-transform: tipo;   alterna o estilo do seu texto
+
+text-decoration: tipo;	coloca linhas no seu texto
+----------------------------------------------------------------------------------------------------------
+                 
+                padding(0 não precisa de valores como px,vh etc) OS CONCEITOS DO PADDING SERVEM PRA OUTROS TAMBEM COMO 
+ 							         BACKGROUND
+padding: 10 px   11 px;
+         cima	 esquerda
+         baixo   direita
+                     
+padding: 10px   11px      10px  11px; 
+         cima    direita  baxo  esquerda
+
+padding-top
+padding-right
+padding-botton
+padding-left
+
+--------------------------------------------------------------------------------------------
+ 		background
+
+background-color:  ;
+background-image:url("nome.tipo);
+background-position: ;
+background-size: 100% 100%;		FAZ A TELA SE AJUSTAR A O TAMANHO TOTAL
+         	cima	 esquerda
+         	baixo   direita	
+
+---------------------------------------------------------------------------------------------
+                  img
+
+size			CONCEITOS GERAIS NO INICIO DO ARQUIVO
+----------------------------------------------------------------------------------------------
+		                 
+		border
+
+border:3px	solid	blue;
+       largura  tipo	cor
+
+border-top:2px dotted red;
+border-right:3px dashed yellow;
+border-left:3px dashed yellow;
+border-bottom:3px dashed yellow;
+
+border-width:3px;   largura
+border-color:blue;
+border-style:solid;
+
+border-right-width:3px;   largura
+border-right-color:blue;
+border-right-style:solid;
+
+border-left-width:3px;   largura
+border-left-color:blue;
+border-left-style:solid;
+
+border-bottom-width:3px;   largura
+border-bottom-color:blue;
+border-bottom-style:solid;
+
+border-top-width:3px;   largura
+border-top-color:blue;
+border-top-style:solid;
+
+			border-radius(para arredondar cantos de elementos)
+border-radius:10px;
+border-radius:50%;	criar formatos
+
+border-radius:10% 	20%;
+             cima	esquerda
+             baixo      direita
+border-radius:10%    20%      10%    20%;
+             cima    direita  baxo  esquerda
+------------------------------------------------------------------------------------------------------------
+			lists
+list-style-type:    ; 		muda o estilo dos marcadores
+
+list-style-image:url("nome.tipo") ;
+
+------------------------------------------------------------------------------------------------------------
+
+
+		imagem 
+		
+               grudando
+
+position: -webkit-sticky;		diz o que vai fazer a imagem desgrudar
+position: sticky;			gruda a imagem
+top: 0;					diz a posição que ele fica no topo
+              
+		Responsiva
+width: 100%;        largura
+max-width: 900px;   tamanho da imagem
+height: auto;	    altura
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+		dimensionamento
+
+width			largura
+height			altura			
+
+max-width               largura maxima que vai se ajustar
+max-height 		altura maxima que vai se ajustar
+
+margin			espaçamento
+
+text-align		alinhamento

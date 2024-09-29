@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;/**/
+    padding: 30px;
+    background: cadetblue;
+    position: relative;  /**/
+    top: 0;              /*vai ficar grudado no topo*/
+    width: 100%;
+    transition: .3s linear;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.left a{
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    font-weight: 750px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.left a:hover{
+    color: red;
+}
+.right a{
+    margin: 10.5px;
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    transition: .3s linear;
+}
+.right a:hover{
+    color: red;
+}
+section{
+    min-height: 150vh;
+}
+.sticky{
+    height: 90px;
+    background: yellowgreen;
+    transition: .3s linear;
+}
+.sticky .left a{
+    color: aquamarine;
+}
+.sticky .right a{
+    color: black;
+}

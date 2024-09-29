@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,blue,yellow);
+}
+.container{
+    width: 550px;
+    height: 350px;
+    border-radius: 50px;
+    background: white;
+    box-shadow: 12px 12px 23px gray,-12px -12px 23px #fff;      /*é utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas*/
+    text-align: center;
+    padding-top: 20px;
+}
+.container h1{      /*vai modificar as tags h1 que estão dentro da classe container*/
+    font-size: 10rem;                 
+    background: linear-gradient(45deg,green,blue) center;  /*Os gradientes CSS permitem que você exiba transições suaves entre duas ou mais cores especificadas. CSS define três tipos de gradientes: Gradientes lineares (vai para baixo / para cima / esquerda / direita / diagonalmente) Gradientes radiais ( definidos por seu centro ) Gradientes cônicos (girados em torno de um ponto central)*/
+    -webkit-text-fill-color: transparent;  /*especifica a cor de preenchimento dos caracteres do texto. */
+    -webkit-background-clip: text;        /* define se o fundo de um elemento se estende abaixo de sua caixa de borda, caixa de preenchimento ou caixa de conteúdo.*/
+    font-weight: 750px;                   /*largura da classe*/
+}
+.container h2{
+    color: cadetblue;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.container p{
+    color: aqua;
+    font-weight: -10px;
+    margin-bottom: 10px;
+}
+.container .btn{
+    padding: 12px 24px;
+    border-radius: 20%;
+    border: none;
+    background: linear-gradient(to left,yellow,green,purple);
+    background-size: 200px;
+    cursor: pointer;
+    color: white;
+    transition: .3s linear;/*tempo de transição de animação*/
+}
+.conteiner .btn:hover{
+    background-position: right;
+}

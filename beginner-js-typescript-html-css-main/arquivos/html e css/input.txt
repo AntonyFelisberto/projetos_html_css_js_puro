@@ -1,0 +1,2 @@
+<input type="tipo" min="minimo que pode colocar" max="maximo que pode colocar"/>
+                        pode ser numeros e ate data   pode ser numeros e ate data

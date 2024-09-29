@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script>
+    let m=1; 
+        function tela(){
+            if(m==1){
+                window.alert("clique na imagem para maior imersão");  
+                m=0;
+            }   
+        }
+        function tocar(){
+         if (document.getElementById('toque').paused){
+            document.getElementById('toque').play();
+         }else{
+            document.getElementById('toque').pause();
+         }  
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <header>
+       <h1>BLOODBORNE</h1>
+    </header>
+    <section>
+        <header>
+            <h2>História</h2>
+        </header>
+        <article>
+            <header>
+            <h3>A noite da caçada</h3>
+            </header>
+
+            <div style="display: none;">
+            <audio controls="controls" id="toque">
+                <source src="blood.mp3" type="audio/mpeg">
+            </audio>
+            </div>
+
+            <img src="m.jpg" alt="BLOODBORNE" onclick="tocar()" onmouseover="tela()" id="ima">
+            <p>
+                No início do jogo somos recebidos por um senhor (que não é o <a href="https://bloodborne.wiki.fextralife.com/Gehrman" target="_blank">Gehrman</a>, até parece o Gascoigne, mas a voz é diferente, então não sei quem ele é) que nos faz uma transfusão de sangue. Recebemos o sangue de Yharnam. Acordamos em plena noite da caçada, com um recado que diz “busque o Paleblood (Sangue Pálido) para transcender a caçada”. O que é o sangue que recebemos, e como o sangue pálido se difere dele? Falaremos disso bem mais para frente, mas entendo que são em essência o mesmo sangue.
+            </p><br>
+            <p>
+                E o que é essa noite da caçada? Em algum momento, algo deu muito errado em <em id="yarn">Yharnam</em> e suas imediações, muitas pessoas foram infectadas por uma doença transmitida pelo sangue e se tornaram bestas. A Healing Church <a href="https://wannaplay.com.br/bloodborne-lore-run-06-oficina-da-igreja-da-cura/" target="_blank" id="church">(Igreja da Cura)</a> então criou dois grupos: Os curandeiros de branco e os assassinos de preto. O papel dos primeiros seria curar e ajudar as pessoas acometidas por doenças, seja ela a doença das feras ou não. Já o segundo grupo seria uma espécie de unidade de expurgo, pronta para caçar e destruir as bestas e ameaças que saíssem do controle. Os próprios habitantes da cidade organizam caçadas a esses monstros. O caos está instaurado.
+            </p>
+            <header>
+                <h4>ITENS</h4>
+            </header>
+            <ul>
+                <li>Antidote</li>
+                <li>Bolt Paper</li>
+                <li>Beast Blood Pellet</li>
+                <li>Blood Dreg</li>
+                <li>Blood of Adella</li>
+                <li>Blood Vial</li>
+                <li>Blood of Arianna</li>
+                <li>Bold Hunter's Mark</li>
+            </ul>
+            <header>
+                <h4>ITENS</h4>
+            </header>
+            <ol>
+                <li>Antidote</li>
+                <li>Bolt Paper</li>
+                <li>Beast Blood Pellet</li>
+                <li>Blood Dreg</li>
+                <li>Blood of Adella</li>
+                <li>Blood Vial</li>
+                <li>Blood of Arianna</li>
+                <li>Bold Hunter's Mark</li>
+                <li><a href=""></a></li>
+            </ol>
+
+                
+        </article>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>

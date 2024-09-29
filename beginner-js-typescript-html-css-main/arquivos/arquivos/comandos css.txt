@@ -1,0 +1,257 @@
+comandos css
+
+<style></style> pra usar o css na pagina atual
+----------------------------------
+<nometag style="comandocss"></nometag>
+------------------------------------------------
+<head>
+ <link rel="stylesheet" href="nomedoarquivo.css">
+</head>
+---------------------------------------------------
+css reset(pegar código na internet)
+
+remove a inconsistencia,conflitos,confusão e pré formatação presente nos navegadores
+
+css normalize(pegar código na internet)
+
+faz com que os elementos se renderizem de forma consistente,tem como alvo os estilos que precisam de 
+normalização,corrige falhas e inconsistencias de navegadores
+
+---------------------------------------------------
+*{
+
+}
+asterisco seleciona todos os iten
+
+#nomedoid{
+
+}
+seleciona o id com esse nome
+
+.nomedaclass{
+
+}
+seleciona a class com esse nome
+
+nometag{
+
+}
+seleciona a tag que tiver esse nome
+
+nomedatag,nomedatag,nomedatag{
+
+}
+seleciona todas as tags que você colocou juntos
+
+.nomedaclass.nomeclass{
+
+}
+seleciona todas as class que você colocou juntos
+|||||||||||||||||||||||||||||||||||||||||||||||||||
+combinadores
++
+~
+>
+nomedatag+nomedatag{
+
+}
+nomedatag>nomedatag{
+
+}
+nomedatag~nomedatag{
+
+}
+||||||||||||||||||||||||||||||||||||||||||||||||||||
+descendentes
+<tag id="nomeid">
+  <tagdentero>nada</tagdentero>
+</tag>
+
+#nomeid tagdentero{
+   aqui você digita as caracteristicas
+}
+||||||||||||||||||||||||||||||||||||||||||||||||||||
+combinadores
+:root-representa um elemento que está na raiz do documento como o <html>
+::before-cria um pseudo elemento que é o primeiro filho do elemento selecionado
+::after-cria um pseudo elemento que é o ultimo filho do elemento selecionado
+----------------------------------------------------
+comentarios css
+/**/
+----------------------------------------------------
+ordem de prevalencia
+style,id,class,tag
+----------------------------------------------------
+*{
+color:valor;muda a cor da letra(#hexadecimal,hls(1,1,1),rgb(1,1,1),cor,hls(1%,1%,1%),rgb(1%,1%,1%))
+ 
+border-color:valor;muda o valor da borda(#hexadecimal,hls(1,1,1),rgb(1,1,1),cor,hls(1%,1%,1%),rgb(1%,1%,1%))
+ 
+font-weight:valor;muda o peso da fonte
+ 
+text-align:valor;alinhar o texto
+ 
+font-family:valor;familia da fonte(pode ter varios valores é só colocar , e escrever)
+ 
+font-size:valor;tamanho da fonte(medium,xx-small,x-small,small,large,x-large,xx-large,smaller,larger,length,initial,inherit)
+ 
+font-style:valor;muda estilo da fonte(normal,italic,oblique)
+ 
+background-color:cor em inglês;muda o fundo(#hexadecimal,hls(1,1,1),rgb(1,1,1),cor,hls(1%,1%,1%),rgb(1%,1%,1%))
+ 
+box-sizing:valor;cria uma caixa (content-box,border-box;)
+
+display:valor(flex-centraliza o conteudo...)
+
+stroke:valor;faz um  traço da cor que você quer(#hexadecimal,hls(1,1,1),rgb(1,1,1),cor,hls(1%,1%,1%),rgb(1%,1%,1%))
+
+stroke-width:valor;largura do traço
+
+stroke-miterlimit:valor;limite 
+
+tranform:valor(rotate(15deg)pra onde vai rodar.....)
+
+overflow:valor(hidden-esconde os itens)
+
+}
+-----------------------------------------------------------------------
+unidades de medida
+px
+em
+rem
+%
+
+0 não requer medida
+alguns valores aceitam medidas negativas
+-------------------------------------------------------------------------
+prefixo de fabricante 
+
+webkit(chrome,safari,versões mais recente do opera)
+moz(firefox)
+o(versões antigas do opera)
+ms(internet explorer)
+-------------------------------------------------------------------------
+outline em bordas
+
+outline:valor;
+outline-style:valor;
+outline-color:valor;
+outline-offset:valor;
+outline-width:valor;
+
+padding
+
+padding-top:valor;
+padding-right:valor;
+padding-left:valor;
+padding-bottom:valor;
+padding:10px  5px     9px     1px;
+         |     |       |        |
+       acima direita abaixo esquerda
+padding:10px;
+         |
+        todos com o mesmo valor
+
+margen
+margin-top:valor;
+margin-right:valor;
+margin-left:valor;
+margin-bottom:valor;
+margin:10px  5px     9px     1px;
+         |     |       |        |
+       acima direita abaixo esquerda
+margin:10px;
+         |
+        todos com o mesmo valor
+-------------------------------------------------------------------------
+fluxos 
+normal-vai empilhando um documento em cima do outro,faz parte do fluxo padrão do navegador
+float-(left,right,bottom,top)
+position-o elemento é removido do fluxo do documento(static-o item fica onde foi declarado,relative-você pode definir valores para alterar o documento,absolute-ele remove o documento do fluxo normal e posiciona ele fora a partir dos valores fornecidos,inherit-,fixed-remove o elemento do fluxo do documento muito usado em cabeçalhos e menus)
+
+display:block
+display:inline
+display:inline-block
+
+clear:both para fazer com que os itens flutuantes não se colidão
+none
+right
+left
+both
+inline-start
+inline-end
+
+
+z-index quanto maior seu numero mais o elemento ficara a frente dos outros
+z-index:18px;
+------------------------------------------------------------------------
+css grid
+é um layout poderosos em css,é bidimensional(você pode controlar tanto as linhas quanto as colunas)
+existe relação entre os containers pais e os filhos
+
+display:grid
+grid-templates-columns:1fr 3fr 1fr;
+grid-templates-rows:1fr 3fr 1fr;
+grid-gap:1rem;
+
+sites para aprender grid
+grid garden
+------------------------------------------------------------------------
+flexbox
+é eficiente para alinhar e distribuir itens
+todos os navegadores possuem
+layout uni-dimensional:horizontal ou vertical
+
+display:flex;
+displaY:inline-flex;
+flex-direction:row;
+flex-direction:column;
+flex conteiner e flex itens
+
+sites para aprender flaxbox
+a guide to flexbox
+flexbox frog
+-----------------------------------------------------------------------
+regras at-dão instruções ao css de como se comportar
+da pra usar todas no código porque são como se fosse funções que só vão executar se a condição for atendida
+
+@media
+@import
+@keyframe
+@font-face
+
+meios
+all-padrão
+screen-tela de exibição
+speech-leitores de tela
+print-material impresso
+
+operadores lógicos(ols)
+and
+or
+not 
+
+@regra only meios ols (min-device-width:numero do tamanhopx da tela->648px) {
+  só vai executar se a tela for desse tamanho
+}
+@regra only screen and (min-device-width:1200){
+ aqui dentro você coloca o css
+}
+------------------------------------------------------
+
+apps para testar compatibilidades em outras paginas
+browserStacks
+saucelabs
+w3c css validator
+css lint
+
+formatar seu codigo css
+prettier.io
+css beautifier
+
+FRAMEWORKS DE CSS
+bootstrap
+foundation
+materialize css
+semantic ui
+pure css

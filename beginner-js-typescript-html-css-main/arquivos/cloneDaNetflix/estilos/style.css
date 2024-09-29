@@ -1,0 +1,99 @@
+:root{/*raiz do projeto para declarar variaveis*/
+   --vermelho:#E50914;
+   /*pra usar variaveis coloca --nomeVariave:valorQueRecebe*/
+   --preta:#141414;
+   --azul:gray;
+}
+
+*{/*o asterisco se refere a todos os elementos do html*/
+    margin: 0;/*espaço entre um item e outro*/
+    padding: 0;/*espaço de um determinado item*/
+    box-sizing: border-box;/*os elementos não podem ultrapassar a semantica ou seja sua div,nav,header entre outros,o box sizing serve pra fazer esses elementos não ultrapassarem essa caixa*/
+}
+
+
+body{
+              /*pra usar as variaveis declaradas na raiz você coloca var(--nomeVariavel)*/
+    background:var(--azul);
+    font-family: 'Times New Roman', Times, serif; 
+    color: white;      
+}
+header .container{/*diz que esse estilo serve pra classe container que esta dentro do header e só as classes que estão dentro do header*/
+    display: flex;/*joga todas todos os itens pra linha*/
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{/*diz que esse estilo serve pra classe logo que esta dentro do header e só as classes que estão dentro do header*/
+    color:var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{/*diz que esse estilo serve pra tag (a) que esta dentro da tag (nav) que esta dentro da tag header*/
+    text-decoration: none;/*tipo de decoração no texto*/
+    color: #AAA;
+    margin-right: 10px;/*da um espaço na margin de cada uma das tags tipo a*/
+}
+header nav a:hover{/*diz que esse estilo serve pra tag (a) que esta dentro da tag (nav) que esta dentro da tag header*/
+             /* :hover->quando a pessoa passar o mouse em cima de certa tag   */
+    color: #fff;
+}
+@media only screen and (min-width: 600px){
+    .restaurante-principal{
+        font-size: 16px;
+        background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('restauranteCelular.jpg');/*se a imagem estiver dentro de outra pasta você tem que colocar nomepasta/nomeArquivo.tipo mas se estiver no mesmo lugar do css você só coloca nomeArquivo.tipo*/
+        height: 400px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+@media only screen and (min-width: 1200px){
+.restaurante-principal{
+    font-size: 16px;
+    background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('Restaurante.jpg');/*se a imagem estiver dentro de outra pasta você tem que colocar nomepasta/nomeArquivo.tipo mas se estiver no mesmo lugar do css você só coloca nomeArquivo.tipo*/
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+}
+@media only screen and (min-width: 1600px){
+    .restaurante-principal{
+        font-size: 16px;
+        background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('Restaurente.jpg');/*se a imagem estiver dentro de outra pasta você tem que colocar nomepasta/nomeArquivo.tipo mas se estiver no mesmo lugar do css você só coloca nomeArquivo.tipo*/
+        height: 400px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+}
+.restaurante-principal .descricao{/*vai afetar a classe descrição que esta dentro da classe restaurante principal*/
+    margin-top: 10px;/*espaçamento entre um item e outro pra cima*/
+    margin-bottom: 40px;/*espaçamento entre um item e outro pra baixo*/
+}
+.titulo{
+    margin-top: 5%;/*a porcentagem já faz o calculo automatico do valor na pagina*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0, 0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;/*o cursor indica que aquele item é clicavel,muda seu formato de acordo com o que voce colocar*/
+    transition: .3s ease all;/*cuida da transição entre uma animação e outra*/
+}
+.botao:hover{
+    background-color:rgb(168, 161, 161);
+}
